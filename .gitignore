@@ -1,0 +1,5 @@
+# build
+/site/content/media/*
+/site/content/post/*
+/builder/builder
+/export
