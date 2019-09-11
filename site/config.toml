@@ -1,0 +1,51 @@
+baseurl = "/"
+title = "Jyny's Blog"
+copyright = "Jyny Chen"
+
+# content paramater
+dateFormatSingle = "2006-01-02"
+dateFormatList = "2006-01-02"
+theme = "hello-friend"
+paginate = 5
+[params]
+  defaultTheme = "dark"
+  contentTypeName = "post"
+  showReadingTime = true
+  minuteReadingTime = "min read"
+  showMenuItems = 2
+  menuMore = "collection"
+  readMore = "Read more"
+  readOtherPosts = "Read other posts"
+  newerPosts = "Newer posts"
+  olderPosts = "Older posts"
+  logoText = "jyny@blog>"
+  subtitle = "Fully Distributed Consensus"
+  Author = ""
+  writtenBy = ""
+
+# menu
+[[menu.main]]
+  identifier = "post"
+  name = "Post"
+  weight = 10
+  url = "/post"
+[[menu.main]]
+  identifier = "about"
+  name = "About"
+  weight = 20
+  url = "/about/"
+[[menu.main]]
+  identifier = "tags"
+  name = "Tags"
+  weight = 30
+  url = "/tags/"
+[[menu.main]]
+  identifier = "categories"
+  name = "Categories"
+  weight = 40
+  url = "/categories/"
+[[menu.main]]
+  identifier = "archive"
+  name = "Archive"
+  weight = 50
+  url = "/archive/"

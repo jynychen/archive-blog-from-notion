@@ -1,0 +1,3 @@
+[submodule "site/themes/hello-friend"]
+	path = site/themes/hello-friend
+	url = git@github.com:Jyny/hugo-theme-hello-friend.git
