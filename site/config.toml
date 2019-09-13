@@ -1,11 +1,11 @@
 baseurl = "/"
 title = "Jyny's Blog"
 copyright = "Jyny Chen"
-
-# content paramater
+theme = "hello-friend"
 dateFormatSingle = "2006-01-02"
 dateFormatList = "2006-01-02"
-theme = "hello-friend"
+
+# content paramater
 paginate = 5
 [params]
   defaultTheme = "dark"

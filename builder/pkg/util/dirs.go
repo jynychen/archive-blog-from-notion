@@ -46,7 +46,3 @@ func cleanText(in string) string {
 	)
 	return ret
 }
-
-func RmExport() {
-	os.RemoveAll(contentPath)
-}
