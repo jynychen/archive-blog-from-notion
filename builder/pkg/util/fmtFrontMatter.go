@@ -23,13 +23,14 @@ type frontMatter struct {
 }
 
 func (fm *frontMatter) Check(block *notionapi.Block) {
-	if block.Title != "" {
+	switch block.Type {
+	case notionapi.BlockPage:
+		// frontMatter.Date
+		fm.Time = block.CreatedTime
+		// frontMatter.Title
 		fm.Title = block.Title
-	}
-	if block.LastEditedTime > fm.Time {
-		fm.Time = block.LastEditedTime
-	}
-	if block.Type == notionapi.BlockText {
+	case notionapi.BlockText:
+		// frontMatter.Description
 		ts := block.GetProperty("title")
 		for _, text := range ts {
 			if len(fm.Description)+len(text.Text) > descLen {
