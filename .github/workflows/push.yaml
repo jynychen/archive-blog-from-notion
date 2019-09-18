@@ -24,7 +24,7 @@ jobs:
     - name: setup submodule
       run: |
         git submodule init
-        git config submodule.site/themes/hello-friend.url https://github.com/Jyny/hugo-theme-hello-friend.git --add
+        git config submodule.site/themes/hello-friend.url https://github.com/Jyny/blog-theme.git --add
         git submodule update
 
     - name: build
