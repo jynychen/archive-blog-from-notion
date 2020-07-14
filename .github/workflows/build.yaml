@@ -1,15 +1,13 @@
-name: run
+name: build
 
 on:
   push:
-  watch:
-    types: [started]
+  workflow_dispatch:
   schedule:
-    - cron: "0 4 * * *"
+    - cron: "0 4 * * 1"
 
 jobs:
   build:
-    name: daily
     runs-on: ubuntu-latest
     steps:
     - name: setup go
